@@ -40,10 +40,10 @@ def extract(filename):
                 print("Got error for one of the attachments for %s" % filename)
                 continue
         if output_count == 0:
-            print("No attachment found for file %s!" % f.name)     
+            print("No attachment found for file %s!" % filename)     
 
     except IOError:
-        print("Problem with %s or one of its attachments!" % f.name)
+        print("Problem with %s or one of its attachments!" % filename)
     return 1, output_count
 
 
